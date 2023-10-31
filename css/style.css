@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+i{
+    margin-right: 10px;
+}
+
+body{
+    background-color: #f6f6f6;
+}
+
+.wrapper{
+    padding: 20px;
+}
+
+.navigation{
+    display: grid;
+    margin-bottom: 2rem;
+    grid-template-columns: 100px auto;
+}
+
+.checkout{
+    display: flex;
+}
+
+.steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step{
+    margin: 0 1rem;
+}
+
+.line{
+    height: 1px;
+    width: 40px;
+    margin: 0 1rem;
+    background-color: black;
+}
+
+.left{
+    border-radius: 10px;
+    padding: 2rem;
+    width: 60%;
+    background-color: #ffffff;
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+
+.paying-mode{
+    margin: 2rem 0;
+    padding: 2rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+}
+
+input[type="text"], input[type="tel"], input[type="month"]{
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="tel"]{
+    height: 50px;
+}
+
+input[type="radio"]{
+    margin-right: 20px;
+}
+
+.paying-mode{
+    display: flex;
+}
+
+.paying-mode:nth-of-type(1) > input[type="radio"]{
+    align-self: flex-start;
+}
+
+input[type="text"], label{
+    display: block;
+}
+
+.card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+
+.card-info input{
+    padding: 15px 30px;
+    border: 1px solid black;
+}
+
+.card-info input:nth-of-type(1){
+    width: 100%;
+}
+
+.card-info > div:nth-of-type(1){
+    grid-column: span 3;
+}
+
+.card-info label:nth-of-type(1){
+    margin-top: 10px;
+}
+
+.card-info label{
+    margin-bottom: 10px;
+}
+
+.billing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    margin: 20px 0;
+}
+
+.billing > div:nth-of-type(1){
+    grid-column: span 2;
+}
+
+.billing label{
+    margin-bottom: 10px;
+}
+
+.billing input{
+    padding: 15px 30px;
+    border: 1px solid black;
+}
+
+.billing div:nth-of-type(2) input:nth-of-type(1), .billing div:nth-of-type(3) input:nth-of-type(1){
+    width: 100%;
+}
+
+.billing div:nth-of-type(1) input:nth-of-type(1){
+    width: 100%;
+}
+
+.left button{
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(56, 155, 56);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.right{
+    margin-left: 20px;
+    width: 40%;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.orders{
+    height: 350px;
+    overflow-y: auto;
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.order h4, p{
+    margin: 10px 0;
+}
+
+.order p{
+    color: gray;
+}
+
+.order img{
+    width: 150px;
+    margin-right: 20px;
+}
+
+.discount h4{
+    margin-bottom: 20px;
+}
+
+.discount form{
+    width: 100%;
+    border:1px solid green;
+    border-radius: 10px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount form input{
+    border: none;
+    outline: none;
+}
+
+.discount form button{
+    border: none;
+    background-color: transparent;
+    color: green;
+    font-size: 1.2rem;
+}
+
+.total div:nth-of-type(1), .total div:nth-of-type(2){
+    color: gray;
+}
+
+.total div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.total hr{
+    border: 1px solid black;
+}
+
+.discount{
+    margin-top: 10px;
+}
+
+@media(max-width: 1200px){
+
+    #logo{
+        margin-bottom: 20px;
+    }
+
+    .navigation{
+        text-align: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .checkout{
+        flex-direction: column;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .right{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 680px){
+
+    .paying-mode{
+        flex-direction: column;
+    }
+
+    .line{
+        width: 10px;
+        margin:  0 5px;
+    }
+
+    .paying-mode input[type="radio"]{
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .paying-mode:nth-of-type(1) > div{
+        width: 100%;
+    }
+
+    .card-info{
+        display: block;
+    }
+
+
+}

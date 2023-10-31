@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <div class="wrapper" id="body">
+        <div class="navigation">
+            <a href="#" id="logo"><img src="./img/logo.png" width="50px" style="border-radius: 50%;" alt=""></a>
+            <div class="steps">
+                <div class="step">
+                    <span style="color: blue;">Information</span>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <span>Payment Details</span>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <span>Complete Order</span>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <div class="left">
+                <h2>Payment Details</h2>
+                <h4>Payment Method</h4>
+                <div>
+                    <div class="paying-mode" id="debit-form">
+                        <input type="radio" name="paying" id="debit" checked="true">
+                        <div>
+                            <label for=""><i class="fa-regular fa-credit-card"></i> Debit / Credit card</label>
+                            <div class="card-info">
+                                <div>
+                                    <label for="">Card holder</label>
+                                    <input type="text" placeholder="e.g. Luka Miljkovic">
+                                </div>
+                                <div>
+                                    <label for="">Card number</label>
+                                    <input type="text" placeholder="xxxx-xxxx-xxxx-xxx">
+                                </div>
+                                <div>
+                                    <label for="">Expiery date</label>
+                                    <input type="month">
+                                </div>
+                                <div>
+                                    <label for="">CVC</label>
+                                    <input type="tel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paying-mode" id="google-pay-form">
+                        <input type="radio" name="paying" id="google-pay">
+                        <label for=""><i class="fa-brands fa-google-pay"></i> <i class="fa-brands fa-apple-pay"></i>
+                            Google / Apple wallet</label>
+                    </div>
+                    <div class="paying-mode" id="cash-form">
+                        <input type="radio" name="paying" id="cash">
+                        <label for=""><i class="fa-solid fa-money-bill"></i> Cash</label>
+                    </div>
+                </div>
+
+                <div id="billing-address">
+                    <h4 style="margin-bottom: 20px;">Billing address</h4>
+                    <div class="billing">
+                        <div>
+                            <label for="">Address</label>
+                            <input type="text" placeholder="e.g. Marijane Gregoran">
+                        </div>
+                        <div>
+                            <label for="">City</label>
+                            <input type="text" placeholder="e.g. Belgrade">
+                        </div>
+                        <div>
+                            <label for="">State</label>
+                            <input type="text" placeholder="e.g. Palilula">
+                        </div>
+                    </div>
+                </div>
+
+                <button>Pay $430</button>
+            </div>
+            <div class="right">
+                <div>
+                    <h2>Order summary</h2>
+                    <div class="orders">
+                        <div class="order">
+                            <div class="order-img">
+                                <img src="./img/air-jordan-4-retro-big-kids-shoes-2PtQzz.jpg" alt="">
+                            </div>
+                            <div class="order-details">
+                                <h4>Air Jordan 4 Retro</h4>
+                                <h4>$160</h4>
+                                <p>Color: Cacao Wow/Ale Brown/Twine/Geode Teal</p>
+                                <p>Size: 3.5 Y</p>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <div class="order-img">
+                                <img src="./img/air-jordan-1-low-mens-shoes-9xSzrW.jpg" alt="">
+                            </div>
+                            <div class="order-details">
+                                <h4>Air Jordan 1 Low</h4>
+                                <h4>$115</h4>
+                                <p>Color: White/Black/White/Royal Blue</p>
+                                <p>Size: M 7</p>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <div class="order-img">
+                                <img src="./img/8cc40f5a-3693-4976-9ce0-70ec9687889b.webp" alt="">
+                            </div>
+                            <div class="order-details">
+                                <h4>Nike Air Max 90</h4>
+                                <h4>$130</h4>
+                                <p>Color: Black/Black/White</p>
+                                <p>Size: 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <h4>Discount Code</h4>
+                    <form action="">
+                        <input type="text" placeholder="e.g. AF45-3411-5677">
+                        <button>Apply</button>
+                    </form>
+                </div>
+                <div class="total">
+                    <div>
+                        <h4>Subtotal</h4>
+                        <h4>$405</h4>
+                    </div>
+                    <div>
+                        <h4>Delivery</h4>
+                        <h4>$25</h4>
+                    </div>
+                    <hr />
+                    <div>
+                        <h4>TOTAL</h4>
+                        <h4>$430</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/app.js"></script>
+        <script src="https://kit.fontawesome.com/608f9b4085.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
